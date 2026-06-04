@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Voting System</title>
+   <style>
+    /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+    background: linear-gradient(135deg, #4b79a1, #283e51);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Main container */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    width: 350px;
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Heading */
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Input box */
+.container input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255,255,255,0.9);
+}
+
+/* Button */
+.container button {
+    width: 100%;
+    padding: 12px;
+    background: #00c6ff;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.container button:hover {
+    background: #0072ff;
+}
+
+/* Admin Link */
+.container a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.container a:hover {
+    opacity: 1;
+}
+
+   </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Enter Your Voter ID</h2>
+
+    <form action="/cgi-bin/login.cgi" method="get">
+        <input type="text" name="voter_id" placeholder="Enter Your Voter ID" required>
+        <button type="submit">Proceed to Vote</button>
+    </form>
+
+    <a href="/admin.html">Admin Login</a>
+</div>
+
+</body>
+</html>

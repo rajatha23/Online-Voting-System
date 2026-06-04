@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+    <style>
+/* ===== Professional Admin Login Styles ===== */
+
+/* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #decaf7, #a08cf8);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Login container */
+.container {
+  background: #fff;
+  width: 95%;
+  max-width: 400px;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  color: #2d3a4a;
+}
+
+/* Heading */
+h2 {
+  font-size: 26px;
+  color: #12005e;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+
+/* Input field */
+input[type="password"] {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0 20px;
+  border: 2px solid #bbb;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input[type="password"]:focus {
+  border-color: #12005e;
+  box-shadow: 0 0 8px rgba(18, 0, 94, 0.4);
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #12005e;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #0b013f;
+  transform: translateY(-2px);
+}
+
+/* Small link or note */
+a {
+  display: block;
+  margin-top: 16px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #12005e;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+a:hover {
+  color: #4a148c;
+  text-decoration: underline;
+}
+</style>
+
+</head>
+<body>
+    <h2>Admin Access</h2>
+    <form action="/cgi-bin/admin.cgi" method="get">
+        <input type="password" name="password" required>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
