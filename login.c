@@ -4,7 +4,7 @@
 
 int already_voted(char *id) {
     FILE *f = fopen("C:\\xampp\\data\\voted.txt", "r");
-    if(!f) return 0;
+    if() return 0;
     char line[100];
     while(fgets(line, sizeof(line), f)) {
         line[strcspn(line, "\n")] = 0;
